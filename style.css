@@ -152,14 +152,14 @@ header{
 }
 
 .cards{
-    padding: 5rem 10rem;
+    padding: 5rem 12rem;
     display: flex;
     justify-content: space-between;
 }
 .card{
     box-shadow: 2px 2px 18px 1px rgb(225, 225, 225);
     border-radius: 15px;
-    width: 13.5rem;
+    width: 15rem;
     transition: 500ms;
 }
 .card:hover{
