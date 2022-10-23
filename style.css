@@ -172,7 +172,6 @@ header{
 }
 .card__img img{
     object-fit: cover;
-    object-position: center;
 }
 .card__name{
     text-align: center;
