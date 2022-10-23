@@ -152,14 +152,14 @@ header{
 }
 
 .cards{
-    padding: 5rem 12rem;
+    padding: 5rem 10rem;
     display: flex;
     justify-content: space-between;
 }
 .card{
     box-shadow: 2px 2px 18px 1px rgb(225, 225, 225);
     border-radius: 15px;
-    width: 15rem;
+    width: 13.5rem;
     transition: 500ms;
 }
 .card:hover{
@@ -171,8 +171,8 @@ header{
     overflow: hidden;
 }
 .card__img img{
-    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+    object-position: center;
 }
 .card__name{
     text-align: center;
