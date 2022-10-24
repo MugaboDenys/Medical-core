@@ -53,20 +53,24 @@ header{
     font-size: 1.02rem;
     font-weight: 600;
 }
-.nav__btn-a{
+
+.nav__btn{
     color: var(--green);
-    
-}
-.nav__btn-b{
-    background-color: var(--green);
-    color: white;
     padding: 15px 25px;
     border-radius: 5px;
 }
-
-.nav__btn-b::after{
+.nav__btn--primary{
+    background-color: var(--green);
+    color: white;
+}
+.nav__btn--primary:hover::after{
+    transform: translateX(4px);
+}
+.nav__btn--primary::after{
+    display: inline-block;
     content: '\2192';
     padding-left: 15px;
+    transition: transform 0.3s ease-out;
 }
 
 .welcome{
