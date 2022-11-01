@@ -53,20 +53,24 @@ header{
     font-size: 1.02rem;
     font-weight: 600;
 }
-.nav__btn-a{
+
+.nav__btn{
     color: var(--green);
-    
-}
-.nav__btn-b{
-    background-color: var(--green);
-    color: white;
     padding: 15px 25px;
     border-radius: 5px;
 }
-
-.nav__btn-b::after{
+.nav__btn--primary{
+    background-color: var(--green);
+    color: white;
+}
+.nav__btn--primary:hover::after{
+    transform: translateX(4px);
+}
+.nav__btn--primary::after{
+    display: inline-block;
     content: '\2192';
     padding-left: 15px;
+    transition: transform 0.3s ease-out;
 }
 
 .welcome{
@@ -110,11 +114,11 @@ header{
     padding: 5rem 5rem;
 }
  
-.experts__img{
+.experts__image{
     width: 60%;
     height: 100%;
 }
-.experts__img img{
+.experts__img {
     width: 100%;
     height: 100%;
 }
@@ -143,7 +147,7 @@ header{
 .sect3__title{
     color: var(--green);
 }
-.sect3__Header{
+.sect3__header{
     font-size: 3rem;
 }
 .sect3__paragraph{
@@ -166,12 +170,11 @@ header{
     box-shadow: 2px 2px 18px 3px rgb(120, 120, 120);
     transform: scale();
 }
-.card__img{
+.card__image{
     width: 100%;
     overflow: hidden;
 }
-.card__img img{
-    border-radius: 20px 20px 0px 0px;
+.card__img{
     object-fit: cover;
 }
 .card__name{
@@ -213,7 +216,6 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    
 }
 .footer__input{
     padding: 17px;
@@ -230,4 +232,5 @@ header{
     border-radius: 0px 5px 5px 0px ;
     background-color: var(--green);
     color: whitesmoke;
+    margin-left: -1rem;
 }
